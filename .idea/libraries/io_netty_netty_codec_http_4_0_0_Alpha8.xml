@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="io.netty:netty-codec-http:4.0.0.Alpha8" type="repository">
+    <properties maven-id="io.netty:netty-codec-http:4.0.0.Alpha8" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/netty-codec-http-4.0.0.Alpha8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-codec-4.0.0.Alpha8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-transport-4.0.0.Alpha8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-handler-4.0.0.Alpha8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-buffer-4.0.0.Alpha8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-common-4.0.0.Alpha8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
