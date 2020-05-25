@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="org.elasticsearch:elasticsearch-x-content:7.5.1" type="repository">
+    <properties maven-id="org.elasticsearch:elasticsearch-x-content:7.5.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/elasticsearch-x-content-7.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elasticsearch-core-7.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/snakeyaml-1.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.8.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-smile-2.8.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-yaml-2.8.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-cbor-2.8.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

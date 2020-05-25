@@ -6,6 +6,9 @@ public class Main {
     public static void main(String[] args) throws IOException,Exception {
 
         Node node = new Node("127.0.0.1", 5454);
+        loadFromProp lfp = new loadFromProp();
+        lfp.loadAll();
         node.start();
+
     }
 }

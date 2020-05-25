@@ -33,9 +33,31 @@ public class InMemoryStore {
         }
         return true;
     }
+    public boolean isTableExists(String table) {
+        synchronized(storage) {
+            if ( !storage.containsKey(table) ) {
+                return false;
+            }
+        }
+        return true;
+    }
     public String get(String table, String id) {
         synchronized(storage) {
             return storage.get(table).get(id);
         }
+    }
+    public  String setOldData(String table, String sequnce, String value) {
+        synchronized(storage) {
+            if (storage.containsKey(table)) {
+                storage.get(table).putIfAbsent(sequnce, value);
+            } else {
+                storage.put(table, new HashMap<>());
+                storage.get(table).putIfAbsent(sequnce, value);
+            }
+        }
+        return sequnce;
+    }
+    public HashMap<String, HashMap<String, String>> getStorage(){
+        return storage;
     }
 }

@@ -5,6 +5,7 @@ import org.apache.lucene.util.SetOnce;
 import org.dbmslabs.olap4.actions.ActionModule;
 import org.dbmslabs.olap4.actions.CreateTableAction;
 import org.dbmslabs.olap4.actions.GetAction;
+import org.dbmslabs.olap4.actions.endPoint;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -40,6 +41,7 @@ public class Node {
          this.actionPlugins = new ArrayList<>();
          this.actionPlugins.add(() -> (new CreateTableAction()));
          this.actionPlugins.add(() -> (new GetAction()));
+        this.actionPlugins.add(() -> (new endPoint()));
 
 
          this.actionModule = new ActionModule(actionPlugins);
